@@ -28,12 +28,18 @@ theme = ["your-main-theme", "plugins-live2d"]
   - **width** *[必需]*（第一个位置参数）宽度 200
   - **height** *[可选]*（第二个位置参数）高度，默认：`220`
   - **position** *[可选]*（第二个位置参数）位置，默认：`left:20` 左边距20px; 或者 `right:20` 右边距20px;
-这是一个用法示例：
+这是一个md中用法示例：
 
 ```markdown
 {{< plugins-live2d width='200' height='220'  position="left:20" >}}
 <!-- OR -->
 {{< plugins-live2d 200 220  "right:100" >}}
+```
+
+这是一个html中用法示例：
+
+```html
+{{ partial "plugin/plugins-live2d.html" (dict "width" "200" "height" "220" "position" "right:10" ) -}}
 ```
 
 > **Warning** 同一页面只支持使用一次！
@@ -42,5 +48,6 @@ theme = ["your-main-theme", "plugins-live2d"]
 ## Dependencies
 
 - [live2d](https://github.com/fghrsh/live2d_demo)
+
 
 
