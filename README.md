@@ -10,7 +10,7 @@
 将此 git 存储库克隆到您的主题文件夹中并添加为您的网站目录的子模块。
 
 ```bash
-git submodule add  themes/plugins-live2d
+git submodule add https://github.com/fixit-theme/hugo-shortcode-plugins-live2d.git themes/plugins-live2d
 ```
 
 接下来编辑您的项目 `config.toml` 并将此主题组件添加到您的主题中：
