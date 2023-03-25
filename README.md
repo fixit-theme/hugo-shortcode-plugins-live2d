@@ -1,6 +1,6 @@
 # hugo-shortcode-plugins-live2d
 
-![preview](https://user-images.githubusercontent.com/33419593/221810055-bf78de27-8f5d-4ffa-bf02-f60c0939f169.png)
+![preview](hugo-live2d.png)
 
 一个live2d版娘插件，shortcode的Hugo主题插件。
 使用开源 live2d - Github 地址 
