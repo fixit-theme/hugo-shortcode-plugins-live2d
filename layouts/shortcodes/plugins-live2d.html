@@ -1,0 +1,14 @@
+<!-- 初始化live2d参数 -->
+{{- $version := "1.0.0" -}}
+{{- $live2d_width := cond .IsNamedParams (.Get "width") (.Get 0) | default "200" -}}
+{{- $live2d_height := cond .IsNamedParams (.Get "height") (.Get 1) | default "230" -}}
+{{- $live2d_position := cond .IsNamedParams (.Get "position") (.Get 2) | default "left:10" -}}
+
+<!--   引入css文件  -->
+<link rel="stylesheet" href='{{ "shortcodes/plugins-live2d/css/index.css" | relURL }}?v={{ $version }}' />
+<link rel="stylesheet" href='{{ "shortcodes/plugins-live2d/css/waifu.min.css" | relURL }}?v={{ $version }}' />
+<!-- <link rel="stylesheet" href='{{ "shortcodes/mmt-netease/css/index.css" | relURL }}?v={{ $version }}' /> -->
+<div class= "plugins-live2d-data" data-live2d_width="{{ $live2d_width }}" data-live2d_height="{{ $live2d_height }}" data-live2d_position="{{ $live2d_position }}" ></div>
+
+<script src='{{ "shortcodes/plugins-live2d/js/index.js" | relURL }}?v={{ $version }}'></script>
+
