@@ -3,7 +3,7 @@
 ![preview](hugo-live2d.png)
 
 一个live2d版娘插件，shortcode的Hugo主题插件。
-使用开源 live2d - Github 地址 
+使用开源 live2d - Github 地址
 
 ## Installation
 
@@ -48,6 +48,3 @@ theme = ["your-main-theme", "plugins-live2d"]
 ## Dependencies
 
 - [live2d](https://github.com/fghrsh/live2d_demo)
-
-
-
